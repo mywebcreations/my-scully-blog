@@ -8,6 +8,9 @@ import { Observable, map } from 'rxjs';
   styleUrls: ['./articles.component.scss']
 })
 export class ArticlesComponent implements OnInit {
+  constructor(private scullyService: ScullyRoutesService){};
+
+  
   
 
 }
