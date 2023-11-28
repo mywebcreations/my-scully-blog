@@ -11,8 +11,12 @@ export class ArticlesComponent implements OnInit {
   constructor(private scullyService: ScullyRoutesService){};
 
   posts$: Observable<ScullyRoute[]> | undefined;
-  
 
+  ngOnInit(): void {
+    this.posts$ = this.scullyService.available$.pipe(
+      map(posts => posts.filter(post => post.title))
+    );
+  }
   
 
 }
