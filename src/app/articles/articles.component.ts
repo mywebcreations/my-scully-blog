@@ -10,7 +10,9 @@ import { Observable, map } from 'rxjs';
 export class ArticlesComponent implements OnInit {
   constructor(private scullyService: ScullyRoutesService){};
 
+  posts$: Observable<ScullyRoute[]> | undefined;
   
+
   
 
 }
