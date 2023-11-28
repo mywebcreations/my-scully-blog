@@ -7,6 +7,7 @@ import { Observable, map } from 'rxjs';
   templateUrl: './articles.component.html',
   styleUrls: ['./articles.component.scss']
 })
-export class ArticlesComponent {
+export class ArticlesComponent implements OnInit {
+  
 
 }
